@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.inputfromuser.java;
+
+/**
+ *
+ * @author k
+ */
+import java.util.Scanner;
+public class InputfromuserJava {
+
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.print("Enter the first number a");
+         int a =sc.nextInt();
+         System.out.print("Enter the second number b");
+         double b=sc.nextInt();
+         double add=a+b;
+         double sub=a-b;
+         double mul=a*b;
+         double div=a/b;
+         
+         System.out.println("addition:"+add);
+         System.out.println("Subtraction:"+sub);;
+         System.out.println("Multiplication:"+mul);
+         System.out.println("Division:"+div);
+    
+                 
+                 
+                 
+                
+        
+        
+        
+    
+        
+    }
+}
