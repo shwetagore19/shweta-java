@@ -1,0 +1,22 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.add1.java;
+
+/**
+ *
+ * @author k
+ */
+public class Add1Java {
+
+    public static void main(String[] args) {
+        int a=8;
+        int b=5;
+        int ans;
+        System.out.println(ans=a+b);
+        System.out.println(ans=a-b);
+        System.out.println(ans=a*b);
+        System.out.println(ans=a/b);
+    }
+}
