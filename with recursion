@@ -1,0 +1,34 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.fibonacci1;
+
+/**
+ *
+ * @author k
+ */
+import java.util.Scanner;
+public class Fibonacci1 {
+
+    public static int fibonacci(int n) {
+        if(n<=1){
+            return n;
+        }
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+    public static void main(String[]args){
+        Scanner SC = new Scanner(System.in);
+        System.out.print("Enter count numbers:");
+        int count = SC.nextInt();
+        
+        for(int i=0;i<count; i++){
+            System.out.println(fibonacci(i45) + " ");
+            
+            
+       
+        }
+
+        
+    }
+}
