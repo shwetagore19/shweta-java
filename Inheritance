@@ -1,0 +1,62 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.parentchild;
+
+/**
+ *
+ * @author Student
+ */
+import java.util.Scanner;
+
+
+    public static void main(String[] args) {
+        
+      class employee{
+          String Name;
+          int ID;
+          float Salary;
+          Scanner sc = new Scanner(System.in);
+          
+          void inputEmployeeData(Scanner sc) {
+        System.out.print("Enter name: ");
+       Name = sc.nextLine();
+       
+       System.out.print("Enter ID;");
+       ID = sc.nextInt();
+       
+       System.out.print("Enter Salary");
+       Salary = sc.nextFloat();
+          }
+       
+        void displayEmployeeData(){
+        System.out.println("Name: " + Name);
+        System.out.println("ID: " + ID);
+      }
+      }
+    }
+
+        class Inheritance{
+            Float Salary;
+            Scanner sc= new Scanner(System.in);
+            
+            void inputInheritanceData(Scanner sc){
+                 System.out.print("Enter Salary: ");
+       Salary = sc.nextFloat();    
+            }
+             void displayData() {
+        displayInheritanceData();  
+                String Person;
+        System.out.println("Inheritance Salary: " + Inheritance Salary);
+            
+        }
+
+    
+    }
+        
+   public class Parentchild {
+
+}
+
+
