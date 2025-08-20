@@ -1,0 +1,96 @@
+Practical No.4-Hierarchical & Hybrid 
+Write a program to display the employee details using inheritance- Hierarchical 
+import java.util.Scanner; 
+class Employee { 
+    String name; 
+    int id; 
+    double salary; 
+ 
+    void inputEmployee() { 
+        Scanner scanner = new Scanner(System.in); 
+        System.out.print("Enter employee name: "); 
+        name = scanner.nextLine(); 
+        System.out.print("Enter employee ID: "); 
+        id = scanner.nextInt(); 
+        System.out.print("Enter employee salary: "); 
+        salary = scanner.nextDouble(); 
+        scanner.nextLine(); // consume newline 
+    } 
+ 
+    void displayEmployee() { 
+        System.out.println("Employee Name: " + name); 
+        System.out.println("Employee ID: " + id); 
+        System.out.println("Employee Salary: " + salary); 
+    } 
+} 
+class Manager extends Employee { 
+    String department; 
+ 
+    void inputManager() { 
+        inputEmployee(); // call parent method 
+        Scanner scanner = new Scanner(System.in); 
+        System.out.print("Enter department: "); 
+        department = scanner.nextLine(); 
+    } 
+ 
+    void displayManager() { 
+        displayEmployee(); 
+        System.out.println("Department: " + department); 
+    } 
+} 
+class Developer extends Employee { 
+    String programmingLanguage; 
+ 
+    void inputDeveloper() { 
+        inputEmployee(); // call parent method 
+        Scanner scanner = new Scanner(System.in); 
+        System.out.print("Enter programming language: "); 
+        programmingLanguage = scanner.nextLine(); 
+    } 
+ 
+    void displayDeveloper() { 
+        displayEmployee(); 
+        System.out.println("Programming Language: " + programmingLanguage); 
+    } 
+} 
+public class EmployeeDetails { 
+    public static void main(String[] args) { 
+ 
+        System.out.println("Enter Manager Details:"); 
+        Manager manager = new Manager(); 
+        manager.inputManager(); 
+ 
+        System.out.println("\nManager Details:"); 
+        manager.displayManager(); 
+ 
+        System.out.println("\nEnter Developer Details:"); 
+        Developer developer = new Developer(); 
+        developer.inputDeveloper(); 
+ 
+        System.out.println("\nDeveloper Details:"); 
+        developer.displayDeveloper(); 
+    } 
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
