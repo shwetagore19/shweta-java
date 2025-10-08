@@ -1,0 +1,81 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.interfacebird;
+
+/**
+ *
+ * @author Student
+ */
+
+
+interface Bird {
+    void fly();
+}
+
+interface AquaticAnimal {
+    void swim();
+}
+
+
+
+
+class Duck implements Bird, AquaticAnimal {
+    
+    public void fly() {
+        System.out.println("Duck flies");
+    }
+    
+    public void swim() {
+        System.out.println("Duck swims");
+    }
+    
+   
+   class Cat implements Bird,AquaticAnimal {
+        public void fly() {
+        System.out.println("Cat flies");
+    }
+    
+    public void swim() {
+        System.out.println("Cat swims");
+    }
+
+public class InterfaceBird {
+    public static void main(String[] args) {
+        Duck d1 = new Duck();
+        d1.fly();
+        d1.swim();
+        
+class Cat implements Bird, AquaticAnimal {
+    
+  
+    public void fly() {
+        System.out.println("Cat flies");
+    }
+    
+  
+    public void swim() {
+        System.out.println("Cat swims");
+    }
+}
+
+// Main executable class
+public class InterfaceBird {
+    
+    public static void main(String[] args) {
+        System.out.println("--- Duck Behavior ---");
+        Duck d1 = new Duck();
+        d1.fly();
+        d1.swim();
+        
+        System.out.println("\n--- Cat Behavior ---");
+       
+        Cat c1 = new Cat();
+        c1.fly();
+        c1.swim();
+    }
+}
+}
+   }
+}
