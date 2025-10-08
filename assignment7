@@ -1,0 +1,30 @@
+interface Bird {
+    void fly();
+}
+
+
+interface AquaticAnimal {
+    void swim();
+}
+
+
+class Duck implements Bird, AquaticAnimal {
+    
+    public void fly() {
+        System.out.println("Duck flies");
+    }
+    
+   
+    public void swim() {
+        System.out.println("Duck swims");
+    }
+}
+
+
+public class InterfaceBird {
+    public static void main(String[] args) {
+        Duck d1 = new Duck();
+        d1.fly();
+        d1.swim();
+    }
+}
