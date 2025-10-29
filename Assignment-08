@@ -1,0 +1,65 @@
+Write a program for creating try catch blocks for exception handling: Arithmetic 
+exception, ArrayIndexOutOfBoundsException, NumberFormatException, 
+StringIndexOutOfBoundsException . 
+Arithmetic exception:- 
+
+import java.util.Scanner; 
+ 
+public class ArithmeticExceptionDemo { 
+    public static void main(String[] args) { 
+        Scanner sc = new Scanner(System.in); 
+        try { 
+            System.out.print("Enter a number to divide 10: "); 
+            int num = sc.nextInt(); 
+            int result = 10 / num; // May cause ArithmeticException 
+            System.out.println("Result: " + result); 
+        } catch (ArithmeticException e) { 
+            System.out.println("Error: Cannot divide by zero!"); 
+        } 
+        sc.close(); 
+    } 
+} 
+ArrayIndexOutOfBoundsException:- 
+public class ArrayIndexOutOfBoundsExceptionDemo { 
+    public static void main(String[] args) { 
+        try { 
+            int[] arr = {1, 2, 3}; 
+            System.out.println("Accessing index 5: " + arr[5]);  
+        } catch (ArrayIndexOutOfBoundsException e) { 
+            System.out.println("Error: Array index out of bounds!"); 
+        } 
+    } 
+} 
+NumberFormatException:- 
+public class NumberFormatExceptionDemo { 
+    public static void main(String[] args) { 
+        // Example 1: valid number string 
+        String str1 = "123"; 
+ 
+        // Example 2: invalid number string 
+        String str2 = "abc"; 
+ 
+        try { 
+            int number1 = Integer.parseInt(str1);  
+            System.out.println("Number1: " + number1); 
+ 
+            int number2 = Integer.parseInt(str2); 
+            System.out.println("Number2: " + number2); 
+        } catch (NumberFormatException e) { 
+            System.out.println("Error: Invalid number format!"); 
+        } 
+    } 
+} 
+StringIndexOutOfBoundsException:- 
+public class StringIndexOutOfBoundsExceptionDemo { 
+    public static void main(String[] args) { 
+        String str = "Hi";  
+ 
+        try { 
+            char ch = str.charAt(5); 
+            System.out.println("Character: " + ch); 
+        } catch (StringIndexOutOfBoundsException e) { 
+            System.out.println("Error: String index out of bounds!"); 
+        } 
+} 
+}
