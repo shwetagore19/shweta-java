@@ -1,0 +1,34 @@
+import java.io.*;        
+import java.util.*;      
+ 
+public class AddStudentRecord { 
+    public static void main(String[] args) { 
+        try { 
+            Scanner sc = new Scanner(System.in); 
+ 
+            FileWriter fw = new FileWriter("students.txt", true); 
+ 
+            System.out.print("Enter Roll No: "); 
+            int roll = sc.nextInt(); 
+            sc.nextLine();  
+ 
+            System.out.print("Enter Name: "); 
+            String name = sc.nextLine(); 
+ 
+            System.out.print("Enter Department: "); 
+            String dept = sc.nextLine(); 
+ 
+            System.out.print("Enter Marks: "); 
+            double marks = sc.nextDouble(); 
+ 
+            fw.write(roll + "," + name + "," + dept + "," + marks + "\n"); 
+            fw.close(); 
+ 
+             
+            System.out.println("✅ Student record added successfully!"); 
+        }  
+        catch (IOException e) { 
+            System.out.println("Error writing to file: " + e.getMessage()); 
+        } 
+    } 
+}
